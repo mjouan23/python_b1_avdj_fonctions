@@ -16,7 +16,7 @@ def average(number1, number2):
 print(average(15, 18))
 
 # Exo 4
-def my_split(strsplit, charsplit):
+def my_split(strsplit, charsplit=" "):
     list_split = []; word = ""
     for letter in strsplit:
         if letter == charsplit:
@@ -27,7 +27,8 @@ def my_split(strsplit, charsplit):
     list_split.append(word)
         
     return list_split
-print(my_split("Bonjour tout le monde", " "))
+
+print(my_split("Bonjour tout le monde"))
 
 # Exo 5
 def my_calcul(operation, *args):
